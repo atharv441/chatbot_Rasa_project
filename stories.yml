@@ -1,0 +1,13 @@
+
+
+stories:
+
+- story: send_email
+  steps:
+  - intent: greet
+  - action: utter_ask_email
+  - intent: email_id
+  - slot_was_set:
+    - email: "abc@gmail.com"
+  - action: action_email
+
